@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template de base</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <a href="/">Sair</a>
+        <a href="{{ url_for('login') }}">Fazer login</a>
+      </header>
+
+      <div>{% block conteudo %}{% endblock %}</div>
+
+      <footer>Atividade Contínua de Desenvolvimento Web - Todos os direitos reservados - 2023</footer>
+    </div>
+  </body>
+</html>
