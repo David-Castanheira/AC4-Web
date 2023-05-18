@@ -1,0 +1,86 @@
+#cadastro {
+    max-width: 540px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  select, button {
+    font-family: inherit;
+  }
+
+  span {
+    white-space: nowrap;
+  }
+
+  .linha {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #login {
+    max-width: 540px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  form {
+    max-width: 540px;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #senha {
+    appearance: textfield;
+  }
+
+  label {
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  input {
+    min-height: 1.3em;
+  }
+
+  #button {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+  }
+
+  button {
+    padding: 0.2em 2.5em;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 1px solid;
+    font-weight: 700;
+    background-color: lightcyan;
+  }
+
+  button:hover {
+    background-color: lightgray;
+  }
+
+  button[type="submit"] {
+    color: darkslateblue;
+    border-color: darkslateblue;
+  }
