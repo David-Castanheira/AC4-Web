@@ -69,11 +69,11 @@
 
   input {
     min-height: 1.3em;
-    margin-top: 10px;
     width: 100%;
     border-radius: 10px;
     border: 0.5px solid #000;
-    padding: 3px;
+    margin-bottom: 10px;
+    padding-top: 5px;
   }
 
   #button {
@@ -92,7 +92,7 @@
     background-color: lightcyan;
     margin-top: 20px;
   }
-  
+
   button[type="submit"] {
     color: darkslateblue;
     border-color: darkslateblue;

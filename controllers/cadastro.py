@@ -1,4 +1,4 @@
-from flask import render_template, redirect, request
+from flask import render_template
 from app import app
 
 @app.route('/cadastro')
