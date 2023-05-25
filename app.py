@@ -1,8 +1,7 @@
 from flask import Flask
 
 app = Flask(__name__)
-
-# Adicionar chave secreta para usar nas sessões 
+app.secret_key = b'09c5ddd8fb2311edbe1990b11cf6128c'
 
 from controllers import *
 
