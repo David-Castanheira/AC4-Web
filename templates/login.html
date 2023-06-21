@@ -1,30 +1,28 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
-    <title>Login</title>
-</head>
-<body>
+{% extends 'menu.html' %}
+
+{% block content %}
     <div id="login">
-    <h1>Login</h1>
-    <form action="/templates/area_logada.html" method="POST">
-    <div class="email">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+        <h1>Login</h1>
+        <form action="area_logada.html" method="POST">
+            <div class="email">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="senha">
+                <label for="senha">Senha:</label>
+                <input type="text" id="senha" name="senha" required>
+            </div>
+            
+            <div id="button">
+                <button type="submit">Login</button>
+                
+            </div>
+        </form>
+            
+            <form action="{{ url_for('cadastro') }}" method="GET">
+                 <h6>Ainda não é cadastrado? </h6>
+                 <button type="submit">Cadastrar-se</button>
+            </form>
     </div>
-      
-    <div class="senha">
-        <label for="senha">Senha:</label>
-        <input type="text" id="senha" name="senha" required>
-    </div>
-      
-    <div id="button">
-        <button type="submit">Cadastrar</button>
-    </div>
-    </form>
-</div>
-</body>
-</html>
+{% endblock %}

@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/static/style.css">
-  <title>Cadastro</title>
-</head>
-<body>
+{% extends 'menu.html' %}
+
+{% block content %}
   <div id="cadastro">
     <h1>Cadastro</h1>
-    <form action="/templates/login.html" method="POST">
+    <form action="/login" method="POST">
       <div class="nome">
         <label for="name">Nome:</label>
         <input id="nome" name="nome" required>
@@ -36,5 +29,4 @@
       </div>
     </form>
   </div>
-</body>
-</html>
+{% endblock %}
